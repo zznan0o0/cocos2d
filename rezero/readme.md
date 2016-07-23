@@ -62,6 +62,7 @@ properties: {
 
     * ActionInterval 
     时间间隔动作，这种动作在已定时间内完成，继承 FiniteTimeAction。
+
     * easing(easeObj ) returns ActionInterval
 
     * easeCubicActionOut 三次函数缓动退出的动作
@@ -151,6 +152,8 @@ properties: {
 ```
 
     * eventManager
-    事件管理器，它主要管理事件监听器注册和派发系统事件。 原始设计中，它支持鼠标，触摸，键盘，陀螺仪和自定义事件。 在 Creator 的设计中，鼠标，触摸和自定义事件的监听和派发
+    事件管理器，它主要管理事件监听器注册和派发系统事件。 
+    原始设计中，它支持鼠标，触摸，键盘，陀螺仪和自定义事件。 
+    在 Creator 的设计中，鼠标，触摸和自定义事件的监听和派发
 
 
