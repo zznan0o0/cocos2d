@@ -57,16 +57,23 @@ properties: {
 ```
 
     * moveBy(duration, deltaPos, deltaY) returns ActionInterval
+
     * cc.p(x, y) return Vec2
+
     * ActionInterval 
     时间间隔动作，这种动作在已定时间内完成，继承 FiniteTimeAction。
     * easing(easeObj ) returns ActionInterval
+
     * easeCubicActionOut 三次函数缓动退出的动作
+
     * easeCubicActionIn 是按三次函数缓动进入的动作
+
     * repeatForever(action) returns ActionInterval
     永远地重复一个动作，有限次数内重复一个动作请使用 repeat 动作。
+
     * sequence(tempArray) returns ActionInterval
     顺序执行动作，创建的动作将按顺序依次运行
+
     * runAction(action) return Action
     执行并返回该执行的动作。该节点将会变成动作的目标。
     调用 runAction 时，节点自身处于不激活状态将不会有任何效果。
@@ -142,4 +149,8 @@ properties: {
         this.node.x += this.xSpeed * dt;
     },
 ```
+
+    * eventManager
+    事件管理器，它主要管理事件监听器注册和派发系统事件。 原始设计中，它支持鼠标，触摸，键盘，陀螺仪和自定义事件。 在 Creator 的设计中，鼠标，触摸和自定义事件的监听和派发
+
 
